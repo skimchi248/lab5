@@ -3,6 +3,11 @@
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
+
+	$(".friend-div > h3").click(function() {
+		event.preventDefault();
+		$(this).text(anagrammedName($(this).text()));
+	});
 })
 
 /*
